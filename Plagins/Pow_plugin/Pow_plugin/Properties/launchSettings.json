@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\User\\source\\repos\\Sum2\\Lesson6(Calc_plagin)\\Lesson6(Calc_plagin)\\bin\\Debug\\net7.0\\Lesson6(Calc_plagin).exe",
+      "workingDirectory": "C:\\Users\\User\\source\\repos\\Sum2\\Lesson6(Calc_plagin)\\Lesson6(Calc_plagin)"
+    }
+  }
+}

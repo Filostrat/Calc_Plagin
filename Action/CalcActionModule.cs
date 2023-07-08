@@ -1,15 +1,9 @@
 ﻿using Autofac;
-using Autofac.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Interfaces;
 
-namespace Lesson6_Calc_plagin_.Actions
+namespace Action
 {
-    internal class CalcActionModule : Autofac.Module
+    public class CalcActionModule : Autofac.Module
     {
         protected override void Load(ContainerBuilder containerBuilde)
         {

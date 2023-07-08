@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson6_Calc_plagin_.Actions
+namespace Interfaces
 {
     public interface ICalcAction
     {

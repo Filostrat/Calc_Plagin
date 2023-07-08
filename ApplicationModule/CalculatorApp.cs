@@ -1,13 +1,19 @@
-﻿using Lesson6_Calc_plagin_.Actions;
+﻿using Action;
+using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson6_Calc_plagin_.Application
+namespace Application
 {
-    internal class CalculatorApp
+    public interface IApplication
+    {
+        Task Run();
+    }
+
+    public class CalculatorApp : IApplication
     {
         private readonly ICalcAction[] _actions;
 
@@ -17,7 +23,7 @@ namespace Lesson6_Calc_plagin_.Application
 
         }
 
-        public void Do()
+        public Task Run()
         {
             var needContinue = true;
             do
@@ -43,6 +49,8 @@ namespace Lesson6_Calc_plagin_.Application
                 needContinue = Console.ReadLine()?.ToLowerInvariant() is "yes";
 
             } while (needContinue);
+
+            return Task.CompletedTask;
         }
     }
 }

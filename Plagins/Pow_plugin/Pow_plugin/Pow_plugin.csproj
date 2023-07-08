@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>Lesson6_Calc_plagin_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <Reference Include="Interfaces">
+      <HintPath>..\..\..\Interfaces\bin\Debug\net7.0\Interfaces.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
